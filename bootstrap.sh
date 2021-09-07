@@ -21,3 +21,12 @@
 # 	fi;
 # fi;
 # unset doIt;
+
+
+# Set Bash as default shell
+echo /usr/local/bin/bash | sudo tee -a /etc/shells
+chsh -s /usr/local/bin/bash
+
+# Install Homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+

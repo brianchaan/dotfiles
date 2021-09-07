@@ -1,11 +1,12 @@
 #!/bin/bash
-# Install command-line tools using Homebrew
-
-# Make sure we’re using the latest Homebrew
 brew update
-
-# Upgrade any already-installed formulae
 brew upgrade
+
+# Taps
+brew tap aws/tap
+brew tap mongodb/brew
+
+# 
 
 # Install GNU core utilities (those that come with OS X are outdated)
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
@@ -49,23 +50,26 @@ brew upgrade
 #brew install xz
 #brew install ettercap
 
-brew tap aws/tap
+
 brew install git && brew link --overwrite git
-brew install mysql
-brew tap mongodb/brew
-brew install mongodb-community@4.2
 brew install nginx
 # brew install ack
-brew install imagemagick
-brew install graphicsmagick
-brew install redis
-brew install aws-sam-cli
+
+# Development Tools
 brew install awscli
-brew install autossh
-brew install sips
+brew install aws-sam-cli
 brew install docker
 brew install docker-compose
 brew install gh
+brew install imagemagick
+brew install graphicsmagick
+brew install sips
+brew install autossh
+
+# Databases
+brew install mysql
+brew install mongodb-community@4.2
+brew install redis
 
 # Install after Xcode - osxfuse may fail and need restart or need permission in Security & Privacy
 # brew cask install osxfuse
