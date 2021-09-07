@@ -34,6 +34,9 @@ chsh -s /usr/local/bin/bash
 # Install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+# Open dotfiles README to go through installation checklist
+open https://www.github.com/brianchaan/dotfiles
+
   # 0 drwx------@  5 brianchaan  staff   160B Jun  2  2020 Applications
   # 0 drwx------@  4 brianchaan  staff   128B Sep  6 18:58 Creative Cloud Files
   # 0 drwx------@  4 brianchaan  staff   128B Aug 25 08:38 Desktop

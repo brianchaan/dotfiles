@@ -3,7 +3,7 @@
 Process for setting up a new mac:
 
 1. Ctrl+Space and type Terminal to open the default Terminal. Then type ```git clone https://github.com/brianchaan/dotfiles``` to clone this repository.
-1. Run ```source bootstrap.sh``` to symlink dotfiles, set up directories, install Homebrew, etc.
+1. Run ```source ~/dotfiles/bootstrap.sh``` to symlink dotfiles, set up directories, install Homebrew, etc.
 
 
 1. Customize iTerm by loading init/com.googlecode.iterm2.plist into iTerm preferences
