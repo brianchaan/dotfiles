@@ -25,7 +25,8 @@
 
 # Folders
 mkdir ~/code
-mkdir 
+mkdir ~/code/h1
+mkdir /var/www
 
 # Set Bash as default shell
 echo /usr/local/bin/bash | sudo tee -a /etc/shells
