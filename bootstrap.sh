@@ -21,7 +21,7 @@
 # 	fi;
 # fi;
 # unset doIt;
-
+#TODO the above should symlink instead of copy each dotfile
 
 # Set Bash as default shell
 echo /usr/local/bin/bash | sudo tee -a /etc/shells
@@ -29,4 +29,3 @@ chsh -s /usr/local/bin/bash
 
 # Install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-

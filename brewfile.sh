@@ -3,10 +3,9 @@ brew update
 brew upgrade
 
 # Taps
+brew tap homebrew/cask
 brew tap aws/tap
 brew tap mongodb/brew
-
-# 
 
 # Install GNU core utilities (those that come with OS X are outdated)
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
@@ -74,6 +73,13 @@ brew install redis
 # Install after Xcode - osxfuse may fail and need restart or need permission in Security & Privacy
 # brew cask install osxfuse
 
+# Casks
+brew install --cask vscode
+brew install --cask chrome
+brew install --cask postman
+brew install --cask slack
+brew install --cask iterm2
+brew install --cask evernote
 
-# Remove outdated versions from the cellar
+
 brew cleanup
