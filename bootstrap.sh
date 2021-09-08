@@ -35,6 +35,9 @@ fi;
 mkdir -p ~/Projects/h1
 mkdir -p /var/www
 
+# Brew - install all programs; bash in particular is needed for the next section
+source $PWD/brewfile.sh
+
 # Set Bash as default shell
 echo /usr/local/bin/bash | sudo tee -a /etc/shells
 chsh -s /usr/local/bin/bash
