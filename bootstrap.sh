@@ -31,7 +31,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
   ln -sf $PWD/.wgetrc ~/.wgetrc
 fi;
 
-# Folders
+# Directories
 mkdir -p ~/Projects/h1
 mkdir -p /var/www
 
@@ -42,6 +42,9 @@ source $PWD/brewfile.sh
 echo /usr/local/bin/bash | sudo tee -a /etc/shells
 chsh -s /usr/local/bin/bash
 /usr/local/bin/bash
+
+# Install Applications
+source $PWD/caskfile.sh
 
 # Install Node and npm packages
 source $PWD/npm.sh

@@ -79,7 +79,7 @@
 	create = "!f() { git checkout -b \"issue/$1\" master 2> /dev/null && git push -u origin \"issue/$1\"; }; f"
 
 	# Remove a branch 
-	delete = "!f() { git branch -D \"issue/$1\" && git push origin \":issue/$1\"; }; f"
+	delete = "!f() { git branch -d \"issue/$1\" && git push origin \":issue/$1\"; }; f"
 
 [apply]
 
@@ -174,3 +174,10 @@
 [url "git://gist.github.com/"]
 
 	insteadOf = "gist:"
+
+[user]
+        name = Brian Haan
+        email = brianchaan@gmail.com
+
+[credential]
+        helper = osxkeychain
