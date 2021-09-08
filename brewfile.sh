@@ -17,8 +17,8 @@ brew tap mongodb/brew
 
 # Install Bash 4
 # Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before running `chsh`.
-# brew install bash
-# brew install bash-completion
+brew install bash
+brew install bash-completion
 
 # Install wget
 # brew install wget
@@ -50,7 +50,7 @@ brew tap mongodb/brew
 #brew install ettercap
 
 
-# brew install git && brew link --overwrite git
+brew install git && brew link --overwrite git
 # brew install nginx
 # # brew install ack
 
