@@ -50,36 +50,36 @@ brew tap mongodb/brew
 #brew install ettercap
 
 
-brew install git && brew link --overwrite git
-brew install nginx
-# brew install ack
+# brew install git && brew link --overwrite git
+# brew install nginx
+# # brew install ack
 
-# Development Tools
-brew install awscli
-brew install aws-sam-cli
-brew install docker
-brew install docker-compose
-brew install gh
-brew install imagemagick
-brew install graphicsmagick
-brew install sips
-brew install autossh
+# # Development Tools
+# brew install awscli
+# brew install aws-sam-cli
+# brew install docker
+# brew install docker-compose
+# brew install gh
+# brew install imagemagick
+# brew install graphicsmagick
+# brew install sips
+# brew install autossh
 
-# Databases
-brew install mysql
-brew install mongodb-community@4.2
-brew install redis
+# # Databases
+# brew install mysql
+# brew install mongodb-community@4.2
+# brew install redis
 
-# Install after Xcode - osxfuse may fail and need restart or need permission in Security & Privacy
-# brew cask install osxfuse
+# # Install after Xcode - osxfuse may fail and need restart or need permission in Security & Privacy
+# # brew cask install osxfuse
 
-# Casks
-brew install --cask vscode
-brew install --cask chrome
-brew install --cask postman
-brew install --cask slack
-brew install --cask iterm2
-brew install --cask evernote
+# # Casks
+# brew install --cask vscode
+# brew install --cask chrome
+# brew install --cask postman
+# brew install --cask slack
+# brew install --cask iterm2
+# brew install --cask evernote
 
 
 brew cleanup
