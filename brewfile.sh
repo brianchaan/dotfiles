@@ -15,13 +15,13 @@ brew tap mongodb/brew
 # brew install ngrep
 # brew install gnu-sed --default-names
 
-# Install Bash 4
-# Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before running `chsh`.
+
+# Install some core tools
+brew install git && brew link --overwrite git
 brew install bash
 brew install bash-completion
-
-# Install wget
-# brew install wget
+brew install wget
+brew install ack
 
 # Install more recent versions of some OS X tools
 # brew install vim
@@ -50,25 +50,25 @@ brew install bash-completion
 #brew install ettercap
 
 
-brew install git && brew link --overwrite git
-# brew install nginx
-# # brew install ack
+
+
 
 # # Development Tools
-# brew install awscli
-# brew install aws-sam-cli
-# brew install docker
-# brew install docker-compose
-# brew install gh
-# brew install imagemagick
-# brew install graphicsmagick
-# brew install sips
-# brew install autossh
+brew install nginx
+brew install awscli
+brew install aws-sam-cli
+brew install docker
+brew install docker-compose
+brew install gh
+brew install imagemagick
+brew install graphicsmagick
+brew install sips
+brew install autossh
 
 # # Databases
-# brew install mysql
-# brew install mongodb-community@4.2
-# brew install redis
+brew install mysql
+brew install mongodb-community@4.2
+brew install redis
 
 # # Install after Xcode - osxfuse may fail and need restart or need permission in Security & Privacy
 # # brew cask install osxfuse
