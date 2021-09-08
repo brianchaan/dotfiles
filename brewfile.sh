@@ -37,7 +37,6 @@ brew install docker-compose
 brew install gh
 brew install imagemagick
 brew install graphicsmagick
-brew install sips
 brew install autossh
 
 # Databases

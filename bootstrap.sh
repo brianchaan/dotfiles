@@ -41,6 +41,13 @@ source $PWD/brewfile.sh
 # Set Bash as default shell
 echo /usr/local/bin/bash | sudo tee -a /etc/shells
 chsh -s /usr/local/bin/bash
+/usr/local/bin/bash
 
-# Open dotfiles README to go through installation checklist
+# Install Node and npm packages
+source $PWD/npm.sh
+
+# Source OSX Preferences
+source $PWD/.osx
+
+# Open tabs to go through manually in succession
 open https://www.github.com/brianchaan/dotfiles
