@@ -102,7 +102,7 @@ defaults write com.apple.frameworks.diskimages auto-open-rw-root -bool true
 defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
 
 # Enable snap-to-grid for icons on the desktop and in other icon views
-/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
+com.apple.driver.AppleBluetoothMultitouch.mouse.plist -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
 /usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
 /usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
 
@@ -215,3 +215,20 @@ defaults write com.apple.messageshelper.MessageController SOInputLineSettings -d
 
 # Enable continuous spell checking
 defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add "continuousSpellCheckingEnabled" -bool true
+
+
+## Set Computer Name
+scutil --set HostName skywalker
+scutil --set LocalHostName skywalker
+scutil --set ComputerName skywalker
+
+## Mouse Options
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseButtonDivision -int 55
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseButtonMode -string TwoButton
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseHorizontalScroll -int 1
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseMomentumScroll -int 1
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseOneFingerDoubleTapGesture -int 1
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseTwoFingerDoubleTapGesture -int 3
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseTwoFingerHorizSwipeGesture -int 2
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseVerticalScroll -int 1
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse UserPreferences -int 1

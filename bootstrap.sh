@@ -60,12 +60,13 @@ source $PWD/.osx
 # Do I need docker in caskfile?
 # Keep old packages in brewfile?
 
+#dropbox.sh - TODO check into using Google drive instead
 # Configure ssh in dropbox
 # Configure git credentials in dropbox
 # Configure aws credentials in dropbox
 # Install fonts from dropbox
 
-# Add osx customizations
+#.osx - Add osx customizations
 # - change computer name
 # - dock
 # - mouse?
