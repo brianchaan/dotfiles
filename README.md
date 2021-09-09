@@ -10,20 +10,17 @@ Before you start...
 1. Add or remove packages you use in brewfile.sh
 1. Add or remove applications you use in caskfile.sh
 1. Replace references to LastPass with whatever password manager you use
-1. I have credentials stored in ~/Dropbox/credentials. If you want to manage your credentials differently, don't run the credentials.ssh file.
-    - ssh: id_rsa, id_rsa.pub, config
-    - git: .git-credentials
-    - aws: .aws/credentials
+1. Update the dropbox.sh file with any files you want to include from your Dropbox, if any, otherwise ignore.
 
 ---
 
-### Procedure for a new Mac
+### Procedure for a brand new Mac
 
 1. Open Safari and Google *Install Homebrew*. 
     - Open the Homebrew website and copy the bash command.
     - Ctrl+Space and type *Terminal* to open the default Terminal.
     - Paste the command. This will install both Homebrew and the Xcode command line tools.
-    - While this command runs, follow the **Configure OS** steps in **Manual Actions**
+    - While this command runs, follow the **Configure OS** steps in **Manual Actions** below
 1. In the Terminal, run ```git clone https://github.com/brianchaan/dotfiles ~/dotfiles``` to clone this repository.
 1. Run ```source ~/dotfiles/bootstrap.sh```. This performs the following:
     - Symlinks each dotfile to the home directory
@@ -33,9 +30,9 @@ Before you start...
     - Installs applications (caskfile.sh)
     - Installs node (npm.sh)
     - Updates OS system preferences (.osx)
-    - While this command runs, follow the **Configure Applications** steps in **Manual Actions**
+    - While this command runs, follow the **Configure Applications** steps in **Manual Actions** below
 1. Restart computer to apply OS Preferences
-1. Run ```source ~/dotfiles/credentials.sh```. This copies credentials and other files.
+1. If you have Dropbox set up with your credentials or other files, run ```source ~/dotfiles/dropbox.sh```.
 
 ---
 
