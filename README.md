@@ -16,6 +16,7 @@ Before you start...
 
 ### Procedure for a brand new Mac
 
+1. Before beginning, install any system or OS updates through the App Store.
 1. Cmd+Space to open Spotlight, type *brew.sh*, and open in Safari.
     - Copy the bash command from the Homebrew website.
     - Cmd+Space and type *Terminal* to open the default Terminal.
@@ -43,6 +44,7 @@ Before you start...
 
 1. Log in to Apple ID
     - Open and configure App Store, Messages, FaceTime
+    - Download and install apps on your account
 1. Add Internet Accounts
     - Open System Preferences > Internet Accounts
     - Add each account
@@ -74,8 +76,8 @@ Before you start...
 1. Login to other Applications:
     - Slack
     - Postman
-    - Adobe Creative Cloud
     - Notion
+    - Adobe Creative Cloud
 
 ---
 
