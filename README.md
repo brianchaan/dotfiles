@@ -1,6 +1,6 @@
 # dotfiles
 
-## Fork Me
+### Fork Me
 
 Before you start...
 
@@ -10,12 +10,14 @@ Before you start...
 1. Add or remove packages you use in brewfile.sh
 1. Add or remove applications you use in caskfile.sh
 1. Replace references to LastPass with whatever password manager you use
-1. I have credentials stored in ~/Dropbox/credentials. If you want to manage your credentials differently, 
-    - 
+1. I have credentials stored in ~/Dropbox/credentials. If you want to manage your credentials differently, don't run the credentials.ssh file.
+    - ssh: id_rsa, id_rsa.pub, config
+    - git: .git-credentials
+    - aws: .aws/credentials
 
 ---
 
-## Procedure for a new Mac
+### Procedure for a new Mac
 
 1. Open Safari and Google *Install Homebrew*. 
     - Open the Homebrew website and copy the bash command.
@@ -37,9 +39,9 @@ Before you start...
 
 ---
 
-## Manual Actions
+### Manual Actions
 
-### Configure OS
+#### Configure OS
 
 1. Log in to Apple ID
     - Open and configure App Store, Messages, FaceTime
@@ -48,7 +50,7 @@ Before you start...
     - Add each account
     - Open and configure Mail, Calendar
 
-### Configure Applications
+#### Configure Applications
 
 1. iTerm2
     - Open iTerm2
@@ -78,7 +80,7 @@ Before you start...
 
 ---
 
-## How to generate an SSH keypair
+### How to generate an SSH keypair
 
 1. Generate a pair of authentication keys: `ssh-keygen -t rsa`
 1. Do not enter a passphrase and use all the defaults.
