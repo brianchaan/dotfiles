@@ -3,9 +3,6 @@
 cd "$(dirname "${BASH_SOURCE}")";
 git pull origin main;
 
-# Open tabs to go through manually in succession
-open https://www.github.com/brianchaan/dotfiles
-
 # Add symlinks to dotfiles
 read -p "This may overwrite existing files in your home directory. Are you sure? (y/N) " -n 1;
 echo "";
@@ -39,6 +36,9 @@ fi;
 
 # Folders
 source $PWD/folders.sh
+
+# Open tabs to go through manually in succession
+open https://www.github.com/brianchaan/dotfiles
 
 # Brew - install all programs; bash in particular is needed for the next section
 source $PWD/brewfile.sh

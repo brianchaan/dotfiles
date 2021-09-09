@@ -42,6 +42,7 @@ Before you start...
 
 #### Configure OS
 
+1. Open LastPass.com and log in to have passwords available
 1. Log in to Apple ID
     - Open and configure App Store, Messages, FaceTime
     - Download and install apps on your account

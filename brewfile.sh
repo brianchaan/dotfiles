@@ -35,6 +35,10 @@ brew install imagemagick
 brew install graphicsmagick
 brew install autossh
 
+# Languages
+brew install php@7.2
+brew install php
+
 # Databases
 brew install mysql
 brew install mongodb-community@4.2
