@@ -4,12 +4,12 @@
 
 Before you start...
 
-1. Update all references to "Brian Haan", "brianchaan" and "brianchaan@gmail.com" with your own name, username and email, respectively
-1. Browse through each dotfile and update to your preference, especially .osx for system preferences
-1. Add or remove folders you want in folders.sh
-1. Add or remove packages you use in brewfile.sh
-1. Add or remove applications you use in caskfile.sh
-1. Replace references to LastPass with whatever password manager you use
+1. Update all references to "Brian Haan", "brianchaan" and "brianchaan@gmail.com" with your own name, username and email, respectively.
+1. Browse through each dotfile and update to your preference, especially .osx for system preferences.
+1. Add or remove folders you want in folders.sh.
+1. Add or remove packages you use in brewfile.sh.
+1. Add or remove applications you use in caskfile.sh.
+1. Replace references to LastPass with whatever password manager you use.
 1. Update the dropbox.sh file with any files you want to include from your Dropbox, if any, otherwise ignore.
 
 ---
