@@ -36,11 +36,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
 fi;
 
 # Directories
-mkdir -p ~/Projects/h1
-mkdir -p ~/Documents/pdf
-mkdir -p ~/Documents/img
-mkdir -p ~/Documents/screenshots
-mkdir -p /var/www
+source $PWD/folders.sh
 
 # Brew - install all programs; bash in particular is needed for the next section
 source $PWD/brewfile.sh
@@ -60,10 +56,8 @@ source $PWD/.osx
 
 #TODO
 # Should bootstrap.sh be run with sudo?
-# Do I need sass in Gemfile?
 # Do I need docker in caskfile?
 # Keep old packages in brewfile?
-# Do I need any npm globals? npx?
 # Configure ssh (dropbox?)
 # Configure git credentials in dropbox
 # Configure aws credentials in dropbox
@@ -77,4 +71,4 @@ source $PWD/.osx
 # - spotlight
 # - notifications
 # - finder sidebar favorites
-
+# - set dir for screenshots
