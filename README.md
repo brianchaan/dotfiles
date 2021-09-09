@@ -16,11 +16,11 @@ Before you start...
 
 ### Procedure for a brand new Mac
 
-1. Open Safari and Google *Install Homebrew*. 
-    - Open the Homebrew website and copy the bash command.
-    - Ctrl+Space and type *Terminal* to open the default Terminal.
+1. Cmd+Space to open Spotlight, type *brew.sh*, and open in Safari.
+    - Copy the bash command from the Homebrew website.
+    - Cmd+Space and type *Terminal* to open the default Terminal.
     - Paste the command. This will install both Homebrew and the Xcode command line tools.
-    - While this command runs, follow the **Configure OS** steps in **Manual Actions** below
+    - While this command runs, follow the **Configure OS** steps in **Manual Actions** below.
 1. In the Terminal, run ```git clone https://github.com/brianchaan/dotfiles ~/dotfiles``` to clone this repository.
 1. Run ```source ~/dotfiles/bootstrap.sh```. This performs the following:
     - Symlinks each dotfile to the home directory
@@ -30,8 +30,9 @@ Before you start...
     - Installs applications (caskfile.sh)
     - Installs node (npm.sh)
     - Updates OS system preferences (.osx)
-    - While this command runs, follow the **Configure Applications** steps in **Manual Actions** below
-1. Restart computer to apply OS Preferences
+    - While this command runs, follow the **Configure Applications** steps in **Manual Actions** below.
+        - After each application installs, it will open automatically to configure.
+1. Restart computer to apply OS Preferences.
 1. If you have Dropbox set up with your credentials or other files, run ```source ~/dotfiles/dropbox.sh```.
 
 ---

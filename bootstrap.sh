@@ -35,7 +35,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
   cp $PWD/.bashrc ~/.bashrc
 fi;
 
-# Directories
+# Folders
 source $PWD/folders.sh
 
 # Brew - install all programs; bash in particular is needed for the next section
@@ -48,20 +48,21 @@ chsh -s /usr/local/bin/bash
 # Install Applications
 source $PWD/caskfile.sh
 
-# Install Node and npm packages
+# Install Node
 source $PWD/npm.sh
 
 # Source OSX Preferences
 source $PWD/.osx
 
 #TODO
-# Should bootstrap.sh be run with sudo?
 # Do I need docker in caskfile?
 # Keep old packages in brewfile?
-# Configure ssh (dropbox?)
+
+# Configure ssh in dropbox
 # Configure git credentials in dropbox
 # Configure aws credentials in dropbox
-# Install fonts (dropbox?)
+# Install fonts from dropbox
+
 # Add osx customizations
 # - dock
 # - mouse?
