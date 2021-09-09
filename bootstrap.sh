@@ -33,6 +33,8 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
   ln -sf $PWD/.wgetrc ~/.wgetrc
 
   cp $PWD/.bashrc ~/.bashrc
+else
+  exit 0;
 fi;
 
 # Folders
@@ -64,6 +66,7 @@ source $PWD/.osx
 # Install fonts from dropbox
 
 # Add osx customizations
+# - change computer name
 # - dock
 # - mouse?
 # - keyboard?
