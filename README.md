@@ -54,7 +54,7 @@ Before you start...
     - Open iTerm2
     - Press Cmd+, to open Preferences
     - Go to General tab > Preferences
-    - Check box 'Load preferences from custom folder or URL'
+    - Check box *Load preferences from custom folder or URL*
     - Select ```/Users/brianchaan/Themes```
     - Completely close (Cmd+q) and re-open iTerm2
 1. LastPass
