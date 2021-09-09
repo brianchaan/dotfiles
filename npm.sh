@@ -6,5 +6,4 @@ source ~/.bashrc
 nvm install stable
 
 # Global node packages
-#TODO I don't think you really use globals anymore...
 #npm install -g 

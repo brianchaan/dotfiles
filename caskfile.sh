@@ -18,11 +18,13 @@ brew install --cask postman
 brew install --cask adobe-creative-cloud
 brew install --cask adobe-acrobat-reader
 brew install --cask notion
+brew install --cask alfred
 brew install --cask zoom
 brew install --cask quicken
 brew install --cask kindle
 brew install --cask spotify
 brew install --cask discord
+brew install --cask ringcentral
 
 # Finish
 brew cleanup
