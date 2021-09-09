@@ -46,6 +46,7 @@ Before you start...
     - Open System Preferences > Internet Accounts
     - Add each account
     - Open and configure Mail, Calendar
+1. Configure any external hardware
 
 #### Configure Applications
 
