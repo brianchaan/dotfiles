@@ -4,7 +4,7 @@
 
 #### Before you start...
 
-1. Change all references to "Brian Haan" and "brianchaan@gmail.com" to your own name and email.
+1. Change two references to "Brian Haan" and "brianchaan@gmail.com" to your own name and email (.gitconfig and .npmrc).
 1. Browse through each dotfile and update to your preference, especially .osx for system preferences.
 1. Add or remove folders you want in folders.sh.
 1. Add or remove packages you use in brewfile.sh.
@@ -93,7 +93,7 @@
     - Press Cmd + , to open Preferences
     - Go to General tab > Preferences
     - Check box *Load preferences from custom folder or URL*
-    - Select ```/Users/brianchaan/Themes```
+    - Select ```/Users/<username>/Themes```
     - Completely close (Cmd + q) and re-open iTerm2
 1. Chrome
     - Configure as default browser
