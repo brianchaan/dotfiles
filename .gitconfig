@@ -176,8 +176,8 @@
 	insteadOf = "gist:"
 
 [user]
-        name = Brian Haan
-        email = brianchaan@gmail.com
+	name = Brian Haan
+	email = brianchaan@gmail.com
 
 [credential]
-        helper = osxkeychain
+    helper = osxkeychain
