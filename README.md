@@ -10,7 +10,7 @@ Before you start...
 1. Add or remove packages you use in brewfile.sh.
 1. Add or remove applications you use in caskfile.sh.
 1. Replace references to LastPass with whatever password manager you use.
-1. Update the dropbox.sh file with any files you want to include from your Dropbox, if any, otherwise ignore.
+1. Update the drive.sh file with any files you want to include from your Google Drive, if any, otherwise ignore.
 
 ---
 
@@ -34,7 +34,7 @@ Before you start...
     - While this command runs, follow the **Configure Applications** steps in **Manual Actions** below.
         - After each application installs, it will open automatically to configure.
 1. Restart computer to apply OS Preferences.
-1. If you have Dropbox set up with your credentials or other files, run ```source ~/dotfiles/dropbox.sh```.
+1. If you have Google Drive set up with your credentials or other files, run ```source ~/dotfiles/drive.sh```.
 
 ---
 
@@ -51,6 +51,25 @@ Before you start...
     - Add each account
     - Open and configure Mail, Calendar
 1. Configure any external hardware
+1. System Preferences that aren't in defaults
+    - Security & Privacy > General
+        - Require password immediately after sleep or screen saver begins
+    - Battery
+        - Battery > Turn display off after: 30 minutes
+        - Power Adapter > Turn display off after: 1 hour
+    - Notifications > Do Not Disturb > Turn on Do Not Disturb:
+        - Check > From: 10PM to 7AM
+        - Check > When the display is sleeping
+        - Check > When the screen is locked
+        - Check > When mirroring to TVs and projectors
+    - Desktop & Screen Saver > Desktop
+        - Change desktop background
+    - Users & Groups
+        - Edit profile picture
+    - Finder
+        - Open Preferences and delete all tags
+        - Add bookmarks: root, home, Drive, img, pdf, screenshots, Paychecks
+
 
 #### Configure Applications
 
@@ -64,21 +83,24 @@ Before you start...
 1. LastPass
     - Log in to account
     - Allow in system preferences
-1. Dropbox
-    - Log in
-    - Download to ~/Dropbox
 1. Chrome
     - Configure as default browser
     - Log in
     - Enable sync
     - Sign in to LastPass extension
+1. Google Drive
+    - Log in
 1. VSCode
     - Ctrl+Shift+P > Settings Sync: Turn on
+1. Adobe Creative Cloud
+    - Log in
+    - Download applications
+1. Better Touch Tool
+    - Load license file from Drive/Credentials
 1. Login to other Applications:
     - Slack
     - Postman
     - Notion
-    - Adobe Creative Cloud
 
 ---
 

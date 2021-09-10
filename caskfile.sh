@@ -22,34 +22,54 @@ brew install --cask slack
 sleep 1
 open /Applications/Slack.app/
 
-brew install --cask dropbox
-sleep 1
-open /Applications/Dropbox.app/
-
 brew install --cask google-chrome
 sleep 1
-open /Applications/Google\ Chrome.app/
+open /Applications/Google\ Drive.app/
 
 brew install --cask notion
 sleep 1
 open /Applications/Notion.app/
 
+brew install --cask alfred
+sleep 1
+open /Applications/Alfred\ 4.app/
+
+brew install --cask google-drive
+sleep 1
+open /Applications/Google\ Drove.app/
+
+brew install --cask ringcentral
+sleep 1
+open /Applications/RingCentral.app/
+
 brew install --cask visual-studio-code
 sleep 1
 open /Applications/Visual\ Studio\ Code.app/
 
-#TODO open these to configure as well
-brew install --cask alfred
-brew install --cask ringcentral
 brew install --cask quicken
+sleep 1
+open /Applications/Quicken.app/
+
 brew install --cask spotify
+sleep 1
+open /Applications/Spotify.app/
+
 brew install --cask discord
+sleep 1
+open /Applications/Discord.app/
+
 brew install --cask adobe-creative-cloud
+sleep 1
+open /Applications/Utilities/Adobe\ Creative\ Cloud/ACC/Creative\ Cloud.app/
+
+brew install --cask adobe-acrobat-reader
+sleep 1
+open /Applications/Adobe\ Acrobat\ Reader\ DC.app/
 
 # Casks to Install only
 brew install --cask firefox
+brew install --cask bettertouchtool
 #brew install --cask docker
-brew install --cask adobe-acrobat-reader
 brew install --cask zoom
 brew install --cask kindle
 brew install --cask vlc
