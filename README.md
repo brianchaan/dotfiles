@@ -61,7 +61,12 @@
 1. Add Internet Accounts
     - Open System Preferences > Internet Accounts
     - Add each account
-    - Open and configure Mail, Calendar
+    - Open and configure Calendar
+        - Start week on Monday
+        - Day starts at 7:00 AM
+        - Day ends at 7:00 PM
+        - Show 16 hours at a time
+        - Default calendar: Google General
 1. Configure any external hardware (mouse, keyboard, monitor)
 1. System Preferences that are difficult to set through terminal commands
     - Security & Privacy > General
@@ -78,9 +83,8 @@
         - Change desktop background
     - Users & Groups
         - Edit profile picture
-    - Finder
+    - Finder Preferences (not System Preferences)
         - Open Preferences and delete all tags
-        - Add bookmarks: root, home, Drive, img, pdf, screenshots
 
 
 #### Configure Applications
@@ -107,6 +111,8 @@
     - Download applications
 1. Better Touch Tool
     - Load license file from Drive/Credentials
+1. Finder
+    - Add bookmarks: root, home, Drive, img, pdf, screenshots
 
 ---
 
