@@ -106,6 +106,9 @@ com.apple.driver.AppleBluetoothMultitouch.mouse.plist -c "Set :DesktopViewSettin
 /usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
 /usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
 
+# Lengthen columns to make it easier to read
+/usr/libexec/PlistBuddy -c "Set :StandardViewOptions:ColumnViewOptions:ColumnWidth 350" ~/Library/Preferences/com.apple.finder.plist
+
 # Use list view in all Finder windows by default
 # Four-letter codes for the other view modes: `icnv`, `clmv`, `Flwv`
 defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
@@ -302,3 +305,7 @@ defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</
 defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/System/Applications/Calendar.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
 defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Spotify.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
 killall Dock
+
+
+## Finder Tags
+defaults write com.apple.finder FavoriteTagNames -array ''
