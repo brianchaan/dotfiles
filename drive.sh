@@ -1,5 +1,5 @@
 #!/bin/bash
-    # - ssh: id_rsa, id_rsa.pub, config
-    # - git: .git-credentials
-    # - aws: .aws/credentials
+cp -r ~/Drive/Credentials/.aws ~
+cp ~/Drive/Credentials/.git-credentials ~
+cp ~/Drive/Credentials/ssh/* ~/.ssh/
     
