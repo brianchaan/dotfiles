@@ -59,9 +59,3 @@ source $PWD/.osx
 #TODO
 # Do I need docker in caskfile?
 # Keep old packages in brewfile?
-
-#drive.sh
-# Configure ssh in dropbox
-# Configure git credentials in dropbox
-# Configure aws credentials in dropbox
-# Install fonts from dropbox
