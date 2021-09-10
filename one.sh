@@ -5,6 +5,7 @@ brew upgrade
 # Taps
 brew tap aws/tap
 brew tap mongodb/brew
+brew tap shivammathur/extensions
 
 # Packages that were previously here
 # brew install coreutils
@@ -16,9 +17,6 @@ brew tap mongodb/brew
 # brew install homebrew/dupes/screen
 
 # Core Utilities
-brew install git && brew link --overwrite git
-brew install bash
-brew install bash-completion
 brew install wget
 brew install ack
 brew install nmap
@@ -26,6 +24,7 @@ brew install vim
 
 # Development Tools
 brew install nginx
+brew install apache2
 brew install awscli
 brew install aws-sam-cli
 brew install docker
@@ -33,15 +32,19 @@ brew install docker-compose
 brew install gh
 brew install imagemagick
 brew install graphicsmagick
+brew install ngrok
+brew install wkhtmltopdf
 brew install autossh
+brew install tidy-html5
 
 # Languages
-brew install php@7.2
 brew install php
+brew install php@7.2 --build-from-source
+brew install shivammathur/extensions/imap@7.2
 
 # Databases
 brew install mysql
-brew install mongodb-community@4.2
+brew install mongodb-community@4.0
 brew install redis
 
 # Finish

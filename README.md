@@ -2,15 +2,25 @@
 
 ### Fork Me
 
-Before you start...
+#### Before you start...
 
-1. Update all references to "Brian Haan", "brianchaan" and "brianchaan@gmail.com" with your own name, username and email, respectively.
+1. Change all references to "Brian Haan" and "brianchaan@gmail.com" to your own name and email.
 1. Browse through each dotfile and update to your preference, especially .osx for system preferences.
 1. Add or remove folders you want in folders.sh.
 1. Add or remove packages you use in brewfile.sh.
 1. Add or remove applications you use in caskfile.sh.
 1. Replace references to LastPass with whatever password manager you use.
 1. Update the drive.sh file with any files you want to include from your Google Drive, if any, otherwise ignore.
+
+#### Dependencies to be fully automated
+
+1. Apple ID set up
+1. Google account set up and synched to Chrome and Google Drive
+1. LastPass or other password manager, especially with Chrome extension
+1. Github account with credentials stored on Google Drive
+1. VSCode settings configured with Settings Sync connected to Github
+1. AWS account with credentials stored on Google Drive
+1. SSH RSA keys generated and stored on Google Drive
 
 ---
 
@@ -23,18 +33,20 @@ Before you start...
     - Paste the command. This will install both Homebrew and the Xcode command line tools.
     - While this command runs, follow the **Configure OS** steps in **Manual Actions** below.
 1. In the Terminal, run ```git clone https://github.com/brianchaan/dotfiles ~/dotfiles``` to clone this repository.
-1. Run ```source ~/dotfiles/bootstrap.sh```. This performs the following:
+1. Run ```source ~/dotfiles/start.sh```. This performs the following:
     - Symlinks each dotfile to the home directory
     - Sets up directories (folders.sh)
-    - Installs brew packages (brewfile.sh)
+    - Installs git and bash (brewinit.sh)
     - Updates the default shell to bash
-    - Installs applications (caskfile.sh)
-    - Installs node (npm.sh)
-    - Updates OS system preferences (.osx)
-    - While this command runs, follow the **Configure Applications** steps in **Manual Actions** below.
-        - After each application installs, it will open automatically to configure.
+    - Installs node
+    - Configures Mac OS preferences
 1. Restart computer to apply OS Preferences.
+1. Open two terminal windows.
+    - In the first, run ```source ~/dotfiles/one.sh```. This uses brew to install programs.
+    - In the second, run ```source ~/dotfiles/two.sh```. This uses brew cask to install applications.
+    - As each application is installed, it will open automatically to configure. Check **Configure Applications** in **Manual Actions** below for specific steps to follow.
 1. If you have Google Drive set up with your credentials or other files, run ```source ~/dotfiles/drive.sh```.
+    - Make sure your Google Drive files are synched before running this command.
 
 ---
 
@@ -50,8 +62,8 @@ Before you start...
     - Open System Preferences > Internet Accounts
     - Add each account
     - Open and configure Mail, Calendar
-1. Configure any external hardware
-1. System Preferences that aren't in defaults
+1. Configure any external hardware (mouse, keyboard, monitor)
+1. System Preferences that are difficult to set through terminal commands
     - Security & Privacy > General
         - Require password immediately after sleep or screen saver begins
     - Battery
@@ -68,28 +80,26 @@ Before you start...
         - Edit profile picture
     - Finder
         - Open Preferences and delete all tags
-        - Add bookmarks: root, home, Drive, img, pdf, screenshots, Paychecks
+        - Add bookmarks: root, home, Drive, img, pdf, screenshots
 
 
 #### Configure Applications
 
+- Apply any Privacy settings needed for each application
+- Log in to each application as it opens
+
 1. iTerm2
     - Open iTerm2
-    - Press Cmd+, to open Preferences
+    - Press Cmd + , to open Preferences
     - Go to General tab > Preferences
     - Check box *Load preferences from custom folder or URL*
     - Select ```/Users/brianchaan/Themes```
-    - Completely close (Cmd+q) and re-open iTerm2
-1. LastPass
-    - Log in to account
-    - Allow in system preferences
+    - Completely close (Cmd + q) and re-open iTerm2
 1. Chrome
     - Configure as default browser
     - Log in
     - Enable sync
     - Sign in to LastPass extension
-1. Google Drive
-    - Log in
 1. VSCode
     - Ctrl+Shift+P > Settings Sync: Turn on
 1. Adobe Creative Cloud
@@ -97,10 +107,6 @@ Before you start...
     - Download applications
 1. Better Touch Tool
     - Load license file from Drive/Credentials
-1. Login to other Applications:
-    - Slack
-    - Postman
-    - Notion
 
 ---
 
