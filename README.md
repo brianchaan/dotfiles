@@ -38,15 +38,17 @@
     - Sets up directories (folders.sh)
     - Installs git and bash (brewinit.sh)
     - Updates the default shell to bash
-    - Installs node
-    - Configures Mac OS preferences
-1. Restart computer to apply OS Preferences.
 1. Open two terminal windows.
     - In the first, run ```source ~/dotfiles/one.sh```. This uses brew to install programs.
     - In the second, run ```source ~/dotfiles/two.sh```. This uses brew cask to install applications.
     - As each application is installed, it will open automatically to configure. Check **Configure Applications** in **Manual Actions** below for specific steps to follow.
 1. If you have Google Drive set up with your credentials or other files, run ```source ~/dotfiles/drive.sh```.
     - Make sure your Google Drive files are synched before running this command.
+1. Run ```source ~/dotfiles/finish.sh```. This performs the following:
+    - Installs node (npm.sh)
+    - Configures Mac OS preferences (.osx)
+1. Restart computer to apply OS Preferences.
+
 
 ---
 
@@ -89,8 +91,10 @@
 
 #### Configure Applications
 
-- Apply any Privacy settings needed for each application
-- Log in to each application as it opens
+As each application opens,
+
+- Apply any Privacy settings asked for
+- Log in
 
 1. iTerm2
     - Open iTerm2
@@ -110,7 +114,10 @@
     - Log in
     - Download applications
 1. Better Touch Tool
+    - Allow Privacy settings
     - Load license file from Drive/Credentials
+    - Downgrade to previous version to use current license
+    - Preferences > Basic Settings > Launch BetterTouchTool on startup
 1. Finder
     - Add bookmarks: root, home, Drive, img, pdf, screenshots
 

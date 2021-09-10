@@ -36,9 +36,6 @@ fi;
 # Folders
 source $PWD/folders.sh
 
-# Open tabs to go through manually in succession
-open https://www.github.com/brianchaan/dotfiles
-
 # Install bash and git to proceed to the next steps
 source $PWD/brewinit.sh
 
@@ -46,15 +43,6 @@ source $PWD/brewinit.sh
 echo /usr/local/bin/bash | sudo tee -a /etc/shells
 chsh -s /usr/local/bin/bash
 
-# Install Node
-source $PWD/npm.sh
-
-# Source OSX Preferences
-source $PWD/.osx
-
 #TODO
-# Double check first 3 preferences to try to automate
-# Is .extras necessary? Otherwise delete. If git works with credentials, it is not necessary.
-# Test running everything in parallel
 # Do I need docker in caskfile?
 # Keep old packages in brewfile?

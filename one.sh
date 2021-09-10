@@ -5,7 +5,6 @@ brew upgrade
 # Taps
 brew tap aws/tap
 brew tap mongodb/brew
-brew tap shivammathur/extensions
 
 # Packages that were previously here
 # brew install coreutils
@@ -37,10 +36,11 @@ brew install wkhtmltopdf
 brew install autossh
 brew install tidy-html5
 
-# Languages
-brew install php
-brew install php@7.2 --build-from-source
-brew install shivammathur/extensions/imap@7.2
+# PHP
+#brew tap shivammathur/extensions
+#brew install php
+#brew install php@7.2 --build-from-source
+#brew install shivammathur/extensions/imap@7.2
 
 # Databases
 brew install mysql
