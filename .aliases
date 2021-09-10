@@ -1,5 +1,5 @@
 # Shortcuts
-alias db="cd ~/Dropbox"
+alias dr="cd ~/Drive"
 alias dc="cd ~/Documents"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
