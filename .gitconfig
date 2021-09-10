@@ -180,4 +180,4 @@
 	email = brianchaan@gmail.com
 
 [credential]
-    helper = osxkeychain
+    helper = store
