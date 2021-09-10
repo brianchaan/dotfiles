@@ -106,6 +106,9 @@ com.apple.driver.AppleBluetoothMultitouch.mouse.plist -c "Set :DesktopViewSettin
 /usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
 /usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
 
+# Lengthen columns to make it easier to read
+/usr/libexec/PlistBuddy -c "Set :StandardViewOptions:ColumnViewOptions:ColumnWidth 350" ~/Library/Preferences/com.apple.finder.plist
+
 # Use list view in all Finder windows by default
 # Four-letter codes for the other view modes: `icnv`, `clmv`, `Flwv`
 defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
@@ -222,7 +225,8 @@ scutil --set HostName skywalker
 scutil --set LocalHostName skywalker
 scutil --set ComputerName skywalker
 
-## Mouse Options
+
+## Mouse Options - Enable all options and highest mouse sensitivity
 defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseButtonDivision -int 55
 defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseButtonMode -string TwoButton
 defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseHorizontalScroll -int 1
@@ -232,3 +236,76 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseTwoFingerDou
 defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseTwoFingerHorizSwipeGesture -int 2
 defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseVerticalScroll -int 1
 defaults write com.apple.driver.AppleBluetoothMultitouch.mouse UserPreferences -int 1
+
+defaults write com.apple.AppleMultitouchMouse MouseButtonDivision -int 55
+defaults write com.apple.AppleMultitouchMouse MouseButtonMode -string TwoButton
+defaults write com.apple.AppleMultitouchMouse MouseHorizontalScroll -int 1
+defaults write com.apple.AppleMultitouchMouse MouseMomentumScroll -int 1
+defaults write com.apple.AppleMultitouchMouse MouseOneFingerDoubleTapGesture -int 1
+defaults write com.apple.AppleMultitouchMouse MouseTwoFingerDoubleTapGesture -int 3
+defaults write com.apple.AppleMultitouchMouse MouseTwoFingerHorizSwipeGesture -int 2
+defaults write com.apple.AppleMultitouchMouse MouseVerticalScroll -int 1
+defaults write com.apple.AppleMultitouchMouse UserPreferences -int 1
+
+defaults write -g com.apple.mouse.scaling -float 3
+defaults write -g AppleEnableMouseSwipeNavigateWithScrolls -int 1
+
+
+## Keyboard Options
+defaults write -g NSAutomaticCapitalizationEnabled -int 0
+defaults write -g NSAutomaticPeriodSubstitutionEnabled -int 0
+defaults write -g NSUserDictionaryReplacementItems -array ''
+
+
+## Show Bluetooth in Menu Bar
+defaults write com.apple.controlcenter "NSStatusItem Visible Bluetooth" -int 1
+defaults write  ~/Library/Preferences/ByHost/ com.apple.controlcenter.plist Bluetooth -int 18
+
+
+## Spotlight
+defaults delete com.apple.Spotlight orderedItems
+defaults write com.apple.Spotlight orderedItems -array-add '{enabled = 1;name = APPLICATIONS;}'
+defaults write com.apple.Spotlight orderedItems -array-add '{enabled = 0;name = "MENU_SPOTLIGHT_SUGGESTIONS";}'
+defaults write com.apple.Spotlight orderedItems -array-add '{enabled = 1;name = "MENU_CONVERSION";}'
+defaults write com.apple.Spotlight orderedItems -array-add '{enabled = 1;name = "MENU_EXPRESSION";}'
+defaults write com.apple.Spotlight orderedItems -array-add '{enabled = 1;name = "MENU_DEFINITION";}'
+defaults write com.apple.Spotlight orderedItems -array-add '{enabled = 1;name = "SYSTEM_PREFS";}'
+defaults write com.apple.Spotlight orderedItems -array-add '{enabled = 1;name = DOCUMENTS;}'
+defaults write com.apple.Spotlight orderedItems -array-add '{enabled = 1;name = DIRECTORIES;}'
+defaults write com.apple.Spotlight orderedItems -array-add '{enabled = 0;name = PRESENTATIONS;}'
+defaults write com.apple.Spotlight orderedItems -array-add '{enabled = 0;name = SPREADSHEETS;}'
+defaults write com.apple.Spotlight orderedItems -array-add '{enabled = 0;name = PDF;}'
+defaults write com.apple.Spotlight orderedItems -array-add '{enabled = 0;name = MESSAGES;}'
+defaults write com.apple.Spotlight orderedItems -array-add '{enabled = 1;name = CONTACT;}'
+defaults write com.apple.Spotlight orderedItems -array-add '{enabled = 1;name = "EVENT_TODO";}'
+defaults write com.apple.Spotlight orderedItems -array-add '{enabled = 0;name = IMAGES;}'
+defaults write com.apple.Spotlight orderedItems -array-add '{enabled = 0;name = BOOKMARKS;}'
+defaults write com.apple.Spotlight orderedItems -array-add '{enabled = 0;name = MUSIC;}'
+defaults write com.apple.Spotlight orderedItems -array-add '{enabled = 0;name = MOVIES;}'
+defaults write com.apple.Spotlight orderedItems -array-add '{enabled = 0;name = FONTS;}'
+defaults write com.apple.Spotlight orderedItems -array-add '{enabled = 1;name = "MENU_OTHER";}'
+
+
+## Screensaver - disable
+defaults -currentHost write com.apple.screensaver idleTime -int 0
+
+
+## Dock - update each line to point to the Application
+defaults delete com.apple.dock persistent-apps
+defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/System/Applications/Utilities/Activity Monitor.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Google Chrome.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/iTerm.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Visual Studio Code.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Postman.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Adobe XD/Adobe XD.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Notion.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Slack.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/System/Applications/Messages.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/System/Applications/Mail.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/System/Applications/Calendar.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Spotify.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+killall Dock
+
+
+## Finder Tags
+defaults write com.apple.finder FavoriteTagNames -array ''
