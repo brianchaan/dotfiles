@@ -66,9 +66,10 @@
     - Open and configure Calendar
         - Start week on Monday
         - Day starts at 7:00 AM
-        - Day ends at 7:00 PM
-        - Show 16 hours at a time
+        - Day ends at 9:00 PM
+        - Show 14 hours at a time
         - Default calendar: Google General
+        - Turn off all alerts
 1. Configure any external hardware (mouse, keyboard, monitor)
 1. System Preferences that are difficult to set through terminal commands
     - Security & Privacy > General
