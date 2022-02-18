@@ -5,6 +5,7 @@ cp -r ~/Drive/Credentials/.aws ~
 
 # Git
 cp ~/Drive/Credentials/.git-credentials ~
+cp ~/Drive/Credentials/.gitconfig* ~
 
 # SSH
 cp ~/Drive/Credentials/ssh/* ~/.ssh/

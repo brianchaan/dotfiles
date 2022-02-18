@@ -4,7 +4,9 @@
 
 #### Before you start...
 
-1. Change two references to "Brian Haan" and "brianchaan@gmail.com" to your own name and email (.gitconfig and .npmrc).
+1. Change two references to "Brian Haan" and "brianchaan@gmail.com" to your own name and email
+   - `.gitconfig`
+   - `.npmrc`
 1. Browse through each dotfile and update to your preference, especially .osx for system preferences.
 1. Add or remove folders you want in folders.sh.
 1. Add or remove packages you use in brewfile.sh.
@@ -27,28 +29,27 @@
 ### Procedure for a brand new Mac
 
 1. Before beginning, install any system or OS updates through the App Store.
-1. Cmd+Space to open Spotlight, type *brew.sh*, and open in Safari.
-    - Copy the bash command from the Homebrew website.
-    - Cmd+Space and type *Terminal* to open the default Terminal.
-    - Paste the command. This will install both Homebrew and the Xcode command line tools.
-    - While this command runs, follow the **Configure OS** steps in **Manual Actions** below.
-1. In the Terminal, run ```git clone https://github.com/brianchaan/dotfiles ~/dotfiles``` to clone this repository.
-1. Run ```source ~/dotfiles/start.sh```. This performs the following:
-    - Symlinks each dotfile to the home directory
-    - Sets up directories (folders.sh)
-    - Installs git and bash (brewinit.sh)
-    - Updates the default shell to bash
+1. Cmd+Space to open Spotlight, type _brew.sh_, and open in Safari.
+   - Copy the bash command from the Homebrew website.
+   - Cmd+Space and type _Terminal_ to open the default Terminal.
+   - Paste the command. This will install both Homebrew and the Xcode command line tools.
+   - While this command runs, follow the **Configure OS** steps in **Manual Actions** below.
+1. In the Terminal, run `git clone https://github.com/brianchaan/dotfiles ~/dotfiles` to clone this repository.
+1. Run `source ~/dotfiles/start.sh`. This performs the following:
+   - Symlinks each dotfile to the home directory
+   - Sets up directories (folders.sh)
+   - Installs git and bash (brewinit.sh)
+   - Updates the default shell to bash
 1. Open two terminal windows.
-    - In the first, run ```source ~/dotfiles/one.sh```. This uses brew to install programs.
-    - In the second, run ```source ~/dotfiles/two.sh```. This uses brew cask to install applications.
-    - As each application is installed, it will open automatically to configure. Check **Configure Applications** in **Manual Actions** below for specific steps to follow.
-1. If you have Google Drive set up with your credentials or other files, run ```source ~/dotfiles/drive.sh```.
-    - Make sure your Google Drive files are synched before running this command.
-1. Run ```source ~/dotfiles/finish.sh```. This performs the following:
-    - Installs node (npm.sh)
-    - Configures Mac OS preferences (.osx)
+   - In the first, run `source ~/dotfiles/one.sh`. This uses brew to install programs.
+   - In the second, run `source ~/dotfiles/two.sh`. This uses brew cask to install applications.
+   - As each application is installed, it will open automatically to configure. Check **Configure Applications** in **Manual Actions** below for specific steps to follow.
+1. If you have Google Drive set up with your credentials or other files, run `source ~/dotfiles/drive.sh`.
+   - Make sure your Google Drive files are synched before running this command.
+1. Run `source ~/dotfiles/finish.sh`. This performs the following:
+   - Installs node (npm.sh)
+   - Configures Mac OS preferences (.osx)
 1. Restart computer to apply OS Preferences.
-
 
 ---
 
@@ -58,37 +59,36 @@
 
 1. Open LastPass.com and log in to have passwords available
 1. Log in to Apple ID
-    - Open and configure App Store, Messages, FaceTime
-    - Download and install apps on your account
+   - Open and configure App Store, Messages, FaceTime
+   - Download and install apps on your account
 1. Add Internet Accounts
-    - Open System Preferences > Internet Accounts
-    - Add each account
-    - Open and configure Calendar
-        - Start week on Monday
-        - Day starts at 7:00 AM
-        - Day ends at 9:00 PM
-        - Show 14 hours at a time
-        - Default calendar: Google General
-        - Turn off all alerts
+   - Open System Preferences > Internet Accounts
+   - Add each account
+   - Open and configure Calendar
+     - Start week on Monday
+     - Day starts at 7:00 AM
+     - Day ends at 9:00 PM
+     - Show 14 hours at a time
+     - Default calendar: Google General
+     - Turn off all alerts
 1. Configure any external hardware (mouse, keyboard, monitor)
 1. System Preferences that are difficult to set through terminal commands
-    - Security & Privacy > General
-        - Require password immediately after sleep or screen saver begins
-    - Battery
-        - Battery > Turn display off after: 30 minutes
-        - Power Adapter > Turn display off after: 1 hour
-    - Notifications > Do Not Disturb > Turn on Do Not Disturb:
-        - Check > From: 10PM to 7AM
-        - Check > When the display is sleeping
-        - Check > When the screen is locked
-        - Check > When mirroring to TVs and projectors
-    - Desktop & Screen Saver > Desktop
-        - Change desktop background
-    - Users & Groups
-        - Edit profile picture
-    - Finder Preferences (not System Preferences)
-        - Open Preferences and delete all tags
-
+   - Security & Privacy > General
+     - Require password immediately after sleep or screen saver begins
+   - Battery
+     - Battery > Turn display off after: 30 minutes
+     - Power Adapter > Turn display off after: 1 hour
+   - Notifications > Do Not Disturb > Turn on Do Not Disturb:
+     - Check > From: 10PM to 7AM
+     - Check > When the display is sleeping
+     - Check > When the screen is locked
+     - Check > When mirroring to TVs and projectors
+   - Users & Groups
+     - Edit profile picture
+   - Finder Preferences (not System Preferences)
+     - Open Preferences and delete all tags
+1. Configure gpg to sign git commits
+   - Follow the instructions line-by-line in gpg.sh
 
 #### Configure Applications
 
@@ -98,29 +98,29 @@ As each application opens,
 - Log in
 
 1. iTerm2
-    - Open iTerm2
-    - Press Cmd + , to open Preferences
-    - Go to General tab > Preferences
-    - Check box *Load preferences from custom folder or URL*
-    - Select ```/Users/<username>/Themes```
-    - Completely close (Cmd + q) and re-open iTerm2
+   - Open iTerm2
+   - Press Cmd+, to open Preferences
+   - Go to General tab > Preferences
+   - Check box _Load preferences from custom folder or URL_
+   - Select `/Users/<username>/Themes`
+   - Completely close (Cmd+q) and re-open iTerm2
 1. Chrome
-    - Configure as default browser
-    - Log in
-    - Enable sync
-    - Sign in to LastPass extension
+   - Configure as default browser
+   - Log in
+   - Enable sync
+   - Sign in to LastPass extension
 1. VSCode
-    - Ctrl+Shift+P > Settings Sync: Turn on
+   - Cmd+Shift+P > Settings Sync: Turn on
 1. Adobe Creative Cloud
-    - Log in
-    - Download applications
+   - Log in
+   - Download applications
 1. Better Touch Tool
-    - Allow Privacy settings
-    - Load license file from Drive/Credentials
-    - Downgrade to previous version to use current license
-    - Preferences > Basic Settings > Launch BetterTouchTool on startup
+   - Allow Privacy settings
+   - Load license file from Drive/Credentials
+   - Downgrade to previous version to use current license
+   - Preferences > Basic Settings > Launch BetterTouchTool on startup
 1. Finder
-    - Add bookmarks: root, home, Drive, img, pdf, screenshots
+   - Add bookmarks: root, home, img, pdf, screenshots, Applications, Desktop, Downloads
 
 ---
 

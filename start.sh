@@ -13,10 +13,8 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
   ln -sf $PWD/.bash_profile ~/.bash_profile
   ln -sf $PWD/.bash_prompt ~/.bash_prompt
   ln -sf $PWD/.curlrc ~/.curlrc
-  ln -sf $PWD/.editorconfig ~/.editorconfig
   ln -sf $PWD/.exports ~/.exports
   ln -sf $PWD/.functions ~/.functions
-  ln -sf $PWD/.gitattributes ~/.gitattributes
   ln -sf $PWD/.gitconfig ~/.gitconfig
   ln -sf $PWD/.gvimrc ~/.gvimrc
   ln -sf $PWD/.hushlogin ~/.hushlogin
@@ -42,7 +40,3 @@ source $PWD/brewinit.sh
 # Set Bash as default shell
 echo /usr/local/bin/bash | sudo tee -a /etc/shells
 chsh -s /usr/local/bin/bash
-
-#TODO
-# Do I need docker in caskfile?
-# Keep old packages in brewfile?

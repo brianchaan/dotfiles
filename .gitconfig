@@ -86,6 +86,9 @@
 	# Detect whitespace errors when applying a patch
 	whitespace = fix
 
+[commit]
+	gpgsign = true
+
 [core]
 
 	# Use custom `.gitignore` and `.gitattributes`
@@ -130,6 +133,10 @@
 
 	# Detect copies as well as renames
 	renames = copies
+	tool = vscode
+
+[difftool "vscode"]
+  cmd = code --wait --diff $LOCAL $REMOTE
 
 [help]
 
@@ -172,7 +179,6 @@
 	pushInsteadOf = "git://gist.github.com/"
 
 [url "git://gist.github.com/"]
-
 	insteadOf = "gist:"
 
 [user]
@@ -180,4 +186,10 @@
 	email = brianchaan@gmail.com
 
 [credential]
-    helper = store
+	helper = osxkeychain
+
+[init]
+	defaultBranch = main
+
+[gpg]
+	program = /usr/local/bin/gpg

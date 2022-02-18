@@ -58,11 +58,12 @@ open /Applications/Adobe\ Acrobat\ Reader\ DC.app/
 brew install --cask firefox
 open /Applications/BetterTouchTool.app/
 
-#brew install --cask docker
+brew install --cask phpstorm
+brew install --cask insomnia
+brew install --cask docker
 brew install --cask zoom
 brew install --cask kindle
 brew install --cask vlc
-brew install --cask mysqlworkbench
 
 # Finish
 brew cleanup
