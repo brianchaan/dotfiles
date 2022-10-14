@@ -8,10 +8,10 @@ brew tap homebrew/cask
 # Casks to Install
 # If necessary, each Application opens after the next is installed 
 # This ordering is to prevent an error for missing executable
-brew install --cask lastpass
+brew install --cask bitwarden
 
 brew install --cask postman
-open /Applications/LastPass.app/
+open /Applications/Bitwarden.app/
 
 brew install --cask google-chrome
 open /Applications/Postman.app/
@@ -31,11 +31,8 @@ open /Applications/Google\ Drive.app/
 brew install --cask alfred
 open /Applications/Notion.app/
 
-brew install --cask ringcentral
-open /Applications/Alfred\ 4.app/
-
+open /Applications/Alfred\ 5.app/
 brew install --cask visual-studio-code
-open /Applications/RingCentral.app/
 
 brew install --cask quicken
 open /Applications/Visual\ Studio\ Code.app/
@@ -46,7 +43,7 @@ open /Applications/Quicken.app/
 brew install --cask discord
 open /Applications/Spotify.app/
 
-brew install --cask adobe-creative-cloud
+brew install --cask figma
 open /Applications/Discord.app/
 
 brew install --cask adobe-acrobat-reader
@@ -58,12 +55,13 @@ open /Applications/Adobe\ Acrobat\ Reader\ DC.app/
 brew install --cask firefox
 open /Applications/BetterTouchTool.app/
 
-brew install --cask phpstorm
+brew install --cask webstorm
 brew install --cask insomnia
 brew install --cask docker
 brew install --cask zoom
 brew install --cask kindle
 brew install --cask vlc
+brew install --cask clockify
 
 # Finish
 brew cleanup

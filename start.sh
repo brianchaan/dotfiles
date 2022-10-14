@@ -27,6 +27,9 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
 
   # This file gets copied because it's just a stub and will have additional lines added to it during this process
   cp $PWD/.bashrc ~/.bashrc
+
+  # Download git autocomplete
+  curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
 else
   exit 0;
 fi;
@@ -39,4 +42,4 @@ source $PWD/brewinit.sh
 
 # Set Bash as default shell
 echo /usr/local/bin/bash | sudo tee -a /etc/shells
-chsh -s /usr/local/bin/bash
+chsh -s /bin/bash

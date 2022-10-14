@@ -29,8 +29,13 @@ elif [ -f /etc/bash_completion ]; then
 	source /etc/bash_completion;
 fi;
 
+# Enable tab completion for git
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
+
 # Enable tab completion for `g` by marking it as an alias for `git`
-if type __git &> /dev/null && [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
+if type __git &> /dev/null && [ -f ~/.git-completion.bash ]; then
 	__git_complete g __git_main;
 fi;
 
@@ -47,5 +52,10 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 # Silence warning about the default being zsh
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
 # Add code command to start VSCode
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+eval "$(/opt/homebrew/bin/brew shellenv)"
